@@ -10,6 +10,7 @@ app.on("ready", async () => {
   try {
     const url = await initRemix({
       serverBuild: join(__dirname, "../build/index.js"),
+      publicFolder: join(__dirname, "../public"),
     });
 
     win = new BrowserWindow({ show: false });
