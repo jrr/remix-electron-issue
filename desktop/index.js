@@ -1,7 +1,10 @@
 // desktop/index.js
-const { initRemix } = require("remix-electron");
-const { app, BrowserWindow } = require("electron");
-const { join } = require("node:path");
+import { initRemix } from "remix-electron";
+import { app, BrowserWindow } from "electron";
+import { join } from "node:path";
+import * as url from "url";
+// https://blog.logrocket.com/alternatives-dirname-node-js-es-modules/
+const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
 /** @type {BrowserWindow | undefined} */
 let win;
