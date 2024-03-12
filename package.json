@@ -2,7 +2,7 @@
   "name": "remix-electron-issue",
   "private": true,
   "sideEffects": false,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "remix build",
     "dev": "remix dev --manual",
